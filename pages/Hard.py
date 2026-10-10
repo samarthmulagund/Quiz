@@ -56,7 +56,7 @@ questions = [
     },
     {
         "question": "Who founded the Maurya Empire?",
-        "options": ["Ashoka", "Chandragupta Maurya ", "Akbar", "Bindusara"],
+        "options": ["Ashoka", "Chandragupta Maurya", "Akbar", "Bindusara"],
         "answer": "Chandragupta Maurya"
     },
     {
@@ -72,7 +72,7 @@ questions = [
     {
         "question": "Which is the only continent through which all lines of longitude pass?",
         "options": ["Africa", "Asia", "Australia", "Europe"],
-        "answer": "Heart"
+        "answer": "Africa"
     }
 ]
 q = questions[st.session_state.question_number]
