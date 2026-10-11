@@ -13,3 +13,4 @@ st.markdown("""
 st.write("Score 🏆 :", st.session_state.score)
 if st.button("Do you want to try again"):
     st.switch_page("Quiz.py")
+st.session_state.score = 0
