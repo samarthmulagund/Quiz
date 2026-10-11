@@ -12,4 +12,4 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.title("Welcome to my Quiz 🧠")
 if st.button("Click here to continue"):
-    st.switch_page("Quiz_pages/Difficulty.py")
+    st.switch_page("pages/Difficulty.py")
