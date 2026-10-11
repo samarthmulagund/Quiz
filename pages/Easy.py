@@ -106,11 +106,11 @@ with col2:
             st.session_state.question_number += 1
             st.session_state.answered = False
             st.rerun()
-with col5:
+with col4:
     if st.session_state.question_number == len(questions)-1:
         if st.button("Finished"):
             st.switch_page("pages/Final Score.py")
-with col5:
+with col3:
     if st.button("Skip"):
         if st.session_state.question_number < len(questions) - 1:
             st.session_state.question_number = st.session_state.question_number + 2
