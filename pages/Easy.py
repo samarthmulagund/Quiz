@@ -116,5 +116,10 @@ with col4:
             st.session_state.question_number = st.session_state.question_number + 2
             st.session_state.answered = False
             st.rerun()
-
+with col3:
+    if st.button("Skip"):
+        if st.session_state.question_number < len(questions) - 1:
+            st.session_state.question_number = st.session_state.question_number - 1
+            st.session_state.answered = False
+            st.rerun()
 score_display.write(f"🏆 Score: {st.session_state.score}")
