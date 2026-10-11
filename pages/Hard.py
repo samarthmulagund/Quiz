@@ -19,6 +19,9 @@ st.set_page_config(
     page_icon="🧠"
 )
 st.title("🧠 My Quiz")
+st.session_state.score = 0
+
+
 
 score_display = st.empty()
 

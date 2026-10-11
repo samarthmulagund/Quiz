@@ -10,7 +10,7 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
-st.title("Please choose the difficulty of your quiz.")
+st.title("Choose the difficulty of your quiz 🧠")
 if st.button("Easy"):
     st.switch_page("pages/Easy.py")
 
