@@ -90,7 +90,7 @@ answer = st.radio(
     q["options"],
     key = f"question_{st.session_state.question_number}"
 )
-col1, col2, col3, col4, col5 = st.columns(5)
+col1, col2, col3, col4 = st.columns(4)
 with col1:
     if st.button("Check Answer", key="check_answer"):
         if answer == q["answer"]:
@@ -110,20 +110,14 @@ with col2:
             st.session_state.answered = False
             st.rerun()
 
-with col5:
+with col4:
     if st.session_state.question_number == len(questions)-1:
         if st.button("Finished"):
             st.switch_page("pages/Final Score.py")
-with col4:
+with col3:
     if st.button("Skip"):
         if st.session_state.question_number < len(questions) - 1:
             st.session_state.question_number = st.session_state.question_number + 2
-            st.session_state.answered = False
-            st.rerun()
-with col3:
-    if st.button("Previous Question"):
-        if st.session_state.question_number < len(questions) - 1:
-            st.session_state.question_number = st.session_state.question_number - 1
             st.session_state.answered = False
             st.rerun()
 score_display.write(f"🏆 Score: {st.session_state.score}")
